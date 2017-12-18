@@ -13,6 +13,8 @@
 		946626CF1FE751730049EA6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 946626CE1FE751730049EA6F /* Assets.xcassets */; };
 		946626D21FE751730049EA6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 946626D01FE751730049EA6F /* LaunchScreen.storyboard */; };
 		946626D51FE751730049EA6F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 946626D41FE751730049EA6F /* main.m */; };
+		946626E01FE751AC0049EA6F /* YTURLRewrite.m in Sources */ = {isa = PBXBuildFile; fileRef = 946626DC1FE751AC0049EA6F /* YTURLRewrite.m */; };
+		946626E11FE751AC0049EA6F /* RewriteRule.m in Sources */ = {isa = PBXBuildFile; fileRef = 946626DF1FE751AC0049EA6F /* RewriteRule.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		946626D11FE751730049EA6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		946626D31FE751730049EA6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		946626D41FE751730049EA6F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		946626DC1FE751AC0049EA6F /* YTURLRewrite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTURLRewrite.m; sourceTree = "<group>"; };
+		946626DD1FE751AC0049EA6F /* RewriteRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RewriteRule.h; sourceTree = "<group>"; };
+		946626DE1FE751AC0049EA6F /* YTURLRewrite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTURLRewrite.h; sourceTree = "<group>"; };
+		946626DF1FE751AC0049EA6F /* RewriteRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RewriteRule.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,7 @@
 		946626C41FE751730049EA6F /* URLRewriteDemo */ = {
 			isa = PBXGroup;
 			children = (
+				946626DB1FE751A30049EA6F /* URLRewrite */,
 				946626C51FE751730049EA6F /* AppDelegate.h */,
 				946626C61FE751730049EA6F /* AppDelegate.m */,
 				946626C81FE751730049EA6F /* ViewController.h */,
@@ -69,6 +76,17 @@
 				946626D41FE751730049EA6F /* main.m */,
 			);
 			path = URLRewriteDemo;
+			sourceTree = "<group>";
+		};
+		946626DB1FE751A30049EA6F /* URLRewrite */ = {
+			isa = PBXGroup;
+			children = (
+				946626DD1FE751AC0049EA6F /* RewriteRule.h */,
+				946626DF1FE751AC0049EA6F /* RewriteRule.m */,
+				946626DE1FE751AC0049EA6F /* YTURLRewrite.h */,
+				946626DC1FE751AC0049EA6F /* YTURLRewrite.m */,
+			);
+			path = URLRewrite;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,9 +160,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				946626E11FE751AC0049EA6F /* RewriteRule.m in Sources */,
 				946626CA1FE751730049EA6F /* ViewController.m in Sources */,
 				946626D51FE751730049EA6F /* main.m in Sources */,
 				946626C71FE751730049EA6F /* AppDelegate.m in Sources */,
+				946626E01FE751AC0049EA6F /* YTURLRewrite.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,7 +238,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -267,7 +287,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
